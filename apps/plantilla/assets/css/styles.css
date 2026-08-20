@@ -1,0 +1,55 @@
+.site-header {
+  padding: 4rem 0 3rem;
+  color: white;
+  background: linear-gradient(135deg, #123f3a, #0e6157);
+}
+
+.site-header h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(2.4rem, 8vw, 4.8rem);
+  font-weight: 400;
+}
+
+.site-header p:last-child {
+  max-width: 44rem;
+  color: #d8ebe5;
+}
+
+fieldset {
+  display: grid;
+  gap: .75rem;
+  margin: 1.5rem 0;
+  padding: 0;
+  border: 0;
+}
+
+legend {
+  margin-bottom: .75rem;
+  font-weight: 700;
+}
+
+.option {
+  display: flex;
+  gap: .75rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: .75rem;
+  background: white;
+  cursor: pointer;
+}
+
+.option:has(input:checked) {
+  border-color: var(--primary);
+  background: #eef7f3;
+}
+
+.feedback {
+  min-height: 3rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: .75rem;
+}
+
+.feedback.success { color: #174f42; background: #dff1e9; }
+.feedback.warning { color: #71432f; background: #f8e7de; }
