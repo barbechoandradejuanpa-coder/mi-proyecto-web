@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aplicación educativa interactiva">
+  <title>Nombre del módulo | Aplicaciones educativas</title>
+  <link rel="stylesheet" href="../../shared/css/base.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="../../shared/js/storage.js" defer></script>
+  <script src="./assets/js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">MÓDULO INTERACTIVO</p>
+      <h1>Nombre del tema</h1>
+      <p>Explica en una frase qué aprenderá el estudiante.</p>
+    </div>
+  </header>
+
+  <main id="contenido" class="container stack">
+    <section class="card" aria-labelledby="objetivos">
+      <h2 id="objetivos">Objetivos de aprendizaje</h2>
+      <ul>
+        <li>Reconocer el concepto principal.</li>
+        <li>Aplicarlo en una situación clínica simulada.</li>
+      </ul>
+    </section>
+
+    <section class="card" aria-labelledby="actividad">
+      <p class="eyebrow">ACTIVIDAD</p>
+      <h2 id="actividad">Decisión clínica</h2>
+      <p>Reemplaza este texto por un caso ficticio breve.</p>
+      <fieldset>
+        <legend>Selecciona la mejor respuesta</legend>
+        <label class="option"><input type="radio" name="respuesta" value="a"> Opción A</label>
+        <label class="option"><input type="radio" name="respuesta" value="b"> Opción B</label>
+        <label class="option"><input type="radio" name="respuesta" value="c"> Opción C</label>
+      </fieldset>
+      <button id="comprobar" class="button" type="button">Comprobar respuesta</button>
+      <div id="retroalimentacion" class="feedback" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="card note" aria-labelledby="recordatorio">
+      <h2 id="recordatorio">Uso educativo</h2>
+      <p>Esta actividad utiliza casos ficticios y no sustituye la valoración clínica individual.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Última revisión: <time datetime="2026-08">agosto de 2026</time></div>
+  </footer>
+</body>
+</html>
